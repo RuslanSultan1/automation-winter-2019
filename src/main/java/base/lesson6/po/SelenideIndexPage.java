@@ -1,5 +1,6 @@
-package base.lesson6;
+package base.lesson6.po;
 
+import base.lesson6.entities.User;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
 

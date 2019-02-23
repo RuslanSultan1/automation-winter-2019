@@ -1,4 +1,4 @@
-package base.lesson6;
+package base.lesson6.entities;
 
 public enum User {
 

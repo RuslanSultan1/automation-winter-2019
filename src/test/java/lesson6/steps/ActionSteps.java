@@ -1,7 +1,7 @@
 package lesson6.steps;
 
-import base.lesson6.SelenideIndexPage;
-import base.lesson6.User;
+import base.lesson6.po.SelenideIndexPage;
+import base.lesson6.entities.User;
 import cucumber.api.java.en.When;
 
 public class ActionSteps {
