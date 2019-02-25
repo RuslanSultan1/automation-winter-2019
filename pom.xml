@@ -8,6 +8,10 @@
     <artifactId>automation-winter-2019</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <domain>http://www.epam.com</domain>
+    </properties>
+
     <dependencies>
 
         <dependency>
@@ -81,6 +85,31 @@
 
         </plugins>
 
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+            </resource>
+            <resource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
     </build>
+
+    <profiles>
+        <profile>
+            <id>DEV</id>
+            <properties>
+                <domain>http://www.dev.epam.com</domain>
+            </properties>
+        </profile>
+        <profile>
+            <id>QA</id>
+            <properties>
+                <domain>http://www.qa.epam.com</domain>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>
